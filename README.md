@@ -16,7 +16,7 @@ A professional development project following **Spec-Driven Development** princip
 
 ## Development Approach
 
-**Methodology**: Spec-Driven Development + Elon Musk's First Principles
+**Methodology**: Spec-Driven Development + Terence Tao's Mathematical Rigor
 
 ### Strict SDD Principles
 
@@ -26,15 +26,17 @@ A professional development project following **Spec-Driven Development** princip
 4. **Documentation**: Every feature is documented before coding
 5. **Tracking**: All work is tracked via todo lists and analytics
 
-### First Principles Philosophy
+### Tao's Mathematical Philosophy
 
-- **Move Fast**: 2-hour development sprints with working code each cycle
-- **Ruthless Efficiency**: Cut anything not critical to the path
-- **Vertical Integration**: Own the entire stack
-- **Data-Driven**: Decisions based on metrics (coverage %, cycle time, etc.)
-- **Rapid Iteration**: Fail fast, learn, improve continuously
+- **Deep Understanding**: 40% of time on problem formulation
+- **Elegant Abstraction**: Find the simplest solution that cannot be simpler
+- **Rigorous Proof**: Prove correctness before implementing
+- **Minimal Complexity**: Every abstraction must be mathematically justified
+- **100% Correctness**: Quality and elegance over speed
 
-See [ELON_PRINCIPLES.md](./docs/ELON_PRINCIPLES.md) for full framework.
+**Core Principle**: "Understand deeply, formulate precisely, prove rigorously, implement elegantly."
+
+See [TAO_PRINCIPLES.md](./docs/TAO_PRINCIPLES.md) for full framework.
 
 ## Getting Started
 
@@ -90,8 +92,8 @@ launchctl unload ~/Library/LaunchAgents/com.projectchimera.autocommit.plist
 
 ## Quick Links
 
-- [Elon Principles Framework](./docs/ELON_PRINCIPLES.md) - First principles approach
-- [Sprint Tracker](./docs/SPRINT_TRACKER.md) - 2-hour cycle tracking
+- [Tao Principles Framework](./docs/TAO_PRINCIPLES.md) - Mathematical rigor approach ⭐
+- [Elon Principles Framework](./docs/ELON_PRINCIPLES.md) - Rapid iteration approach
 - [Development Guidelines](./docs/DEVELOPMENT.md)
 - [Specification Template](./specs/SPEC_TEMPLATE.md)
 - [Test Guidelines](./docs/TESTING.md)
