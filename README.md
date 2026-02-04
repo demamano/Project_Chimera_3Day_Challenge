@@ -14,15 +14,27 @@ A professional development project following **Spec-Driven Development** princip
 └── .vscode/               # VSCode settings
 ```
 
-## Spec-Driven Development Approach
+## Development Approach
 
-This project follows strict SDD principles:
+**Methodology**: Spec-Driven Development + Elon Musk's First Principles
+
+### Strict SDD Principles
 
 1. **Specifications First**: All features start with detailed specs in `/specs`
 2. **Clear Requirements**: Each spec defines acceptance criteria
 3. **Test-Driven**: Tests are written based on specs before implementation
 4. **Documentation**: Every feature is documented before coding
 5. **Tracking**: All work is tracked via todo lists and analytics
+
+### First Principles Philosophy
+
+- **Move Fast**: 2-hour development sprints with working code each cycle
+- **Ruthless Efficiency**: Cut anything not critical to the path
+- **Vertical Integration**: Own the entire stack
+- **Data-Driven**: Decisions based on metrics (coverage %, cycle time, etc.)
+- **Rapid Iteration**: Fail fast, learn, improve continuously
+
+See [ELON_PRINCIPLES.md](./docs/ELON_PRINCIPLES.md) for full framework.
 
 ## Getting Started
 
@@ -52,11 +64,39 @@ Work progress is tracked using:
 - **TenX Analytics**: Performance and competency metrics
 - **Git**: Version control and change history
 
+## Auto-Commit
+
+This project is configured with automatic commit functionality that runs every **2 hours** to save any changes to git.
+
+- **Status**: ✅ Active
+- **Interval**: 2 hours (7200 seconds)
+- **Configuration**: [Auto-Commit Guide](./docs/AUTO_COMMIT_GUIDE.md)
+
+### Quick Commands
+
+```bash
+# Check auto-commit status
+launchctl list | grep projectchimera
+
+# Manually trigger auto-commit
+bash config/auto-commit.sh
+
+# View logs
+tail -f logs/auto-commit.log
+
+# Disable auto-commit
+launchctl unload ~/Library/LaunchAgents/com.projectchimera.autocommit.plist
+```
+
 ## Quick Links
 
+- [Elon Principles Framework](./docs/ELON_PRINCIPLES.md) - First principles approach
+- [Sprint Tracker](./docs/SPRINT_TRACKER.md) - 2-hour cycle tracking
 - [Development Guidelines](./docs/DEVELOPMENT.md)
 - [Specification Template](./specs/SPEC_TEMPLATE.md)
 - [Test Guidelines](./docs/TESTING.md)
+- [Auto-Commit Guide](./docs/AUTO_COMMIT_GUIDE.md)
+- [Project Charter](./docs/PROJECT_CHARTER.md)
 
 ---
 
