@@ -183,7 +183,8 @@ async def test_skill_error_handling():
     
     result = await execute(input_data, mcp_client=mock_mcp)
     
-    assert result.success == False
+    # Use 'not result.success' instead of '== False'
+    assert not result.success
     assert result.error is not None
     assert "timeout" in result.error.lower()
 

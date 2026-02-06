@@ -4,8 +4,6 @@ These tests SHOULD FAIL initially (TDD approach).
 """
 
 import pytest
-from datetime import datetime
-from pydantic import ValidationError
 
 
 def test_trend_fetcher_returns_valid_structure():
@@ -122,7 +120,7 @@ async def test_trend_fetcher_uses_mcp_resources():
         ]
     }
     
-    result = await fetch_trends_async(
+    await fetch_trends_async(
         niche=["fashion"],
         time_window="24h",
         mcp_client=mock_mcp
