@@ -117,9 +117,7 @@ async def test_trend_fetcher_uses_mcp_resources():
         ]
     }
 
-    await fetch_trends_async(
-        niche=["fashion"], time_window="24h", mcp_client=mock_mcp
-    )
+    await fetch_trends_async(niche=["fashion"], time_window="24h", mcp_client=mock_mcp)
 
     # Verify MCP resource was called
     mock_mcp.get_resource.assert_called_once()

@@ -111,7 +111,7 @@ def test_skill_input_validation():
         ContentGenerationInput(
             content_type="instagram_post",
             topic="Test",
-            platform="instagram"
+            platform="instagram",
             # Missing agent_id (required)
         )
 
